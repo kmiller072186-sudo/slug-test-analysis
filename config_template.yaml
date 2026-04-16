@@ -1,0 +1,29 @@
+input_data:
+  data_file: "path/to/data_file.dat"
+  units: "metric"
+test_type:
+  type: "slug test"
+well_parameters:
+  diameter: "4 inches"
+  depth: "150 feet"
+aquifer_parameters:
+  hydraulic_conductivity: "20 m/day"
+  storativity: "0.1"
+analysis_methods:
+  - method: "Type Curve Analysis"
+  - method: "Theis Solution"
+data_processing:
+  smoothing: "True"
+  noise_reduction: "None"
+fitting_parameters:
+  max_iterations: 100
+  convergence_criteria: "0.01"
+output_configuration:
+  output_file: "results/output_file.txt"
+  format: "csv"
+plotting_settings:
+  include_plots: "True"
+  plot_type: "line"
+scientific_assumptions:
+  - assumption: "Homogeneous aquifer"
+  - assumption: "Isotropic conditions"
